@@ -48,8 +48,11 @@ I am an aspiring Software Developer and AI Engineer with a strong passion for so
 
 /portfolio
 │── index.html
+
 │── style.css
+
 │── script.js
+
 │── /assets
 
 ---
