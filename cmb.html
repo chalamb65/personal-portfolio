@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chala Merga Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background: radial-gradient(circle at 20% 20%, #0a0f2c, #050816 70%);
+  color:white;
+  overflow-x:hidden;
+}
+
+/* floating background dots */
+body::before{
+  content:"";
+  position:fixed;
+  width:100%;
+  height:100%;
+  background-image: radial-gradient(#00f2ff 1px, transparent 1px), radial-gradient(#b400ff 1px, transparent 1px);
+  background-size: 80px 80px;
+  opacity:0.08;
+  z-index:-1;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:50px 20px;
+  text-align:center;
+}
+
+/* PROFILE IMAGE GLOW */
+.profile-wrapper{
+  display:flex;
+  justify-content:center;
+  margin-bottom:20px;
+}
+
+.profile-img{
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  padding:4px;
+  background: linear-gradient(135deg,#00f2ff,#b400ff,#00f2ff);
+  box-shadow:0 0 25px #00f2ff, 0 0 50px #b400ff;
+}
+
+.profile-img img{
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid #0a0f2c;
+}
+
+h1{
+  font-size:56px;
+  font-weight:800;
+  background: linear-gradient(90deg,#00f2ff,#b400ff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  text-shadow:0 0 20px rgba(180,0,255,0.4);
+}
+
+.intro{
+  color:#00f2ff;
+  font-size:18px;
+  margin-bottom:5px;
+}
+
+.subtitle{
+  margin-top:10px;
+  color:#bbb;
+  font-size:14px;
+  line-height:1.6;
+}
+
+/* BADGES */
+.badges{
+  margin:25px 0;
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.badge{
+  padding:10px 20px;
+  border-radius:30px;
+  border:1px solid transparent;
+  background: linear-gradient(#0a0f2c,#0a0f2c) padding-box,
+              linear-gradient(90deg,#00f2ff,#b400ff) border-box;
+  color:#ddd;
+  transition:0.3s;
+}
+
+.badge:hover{
+  box-shadow:0 0 15px #00f2ff;
+}
+
+/* GLASS CARD */
+.section{
+  margin-top:40px;
+  padding:30px;
+  border-radius:20px;
+  background: rgba(255,255,255,0.04);
+  backdrop-filter: blur(15px);
+  border:1px solid rgba(255,255,255,0.1);
+  box-shadow:0 0 40px rgba(0,242,255,0.1);
+  display:flex;
+  gap:20px;
+  text-align:left;
+  border-image: linear-gradient(
+    to bottom,
+    #00f2ff,
+    #b400ff
+  ) 1;
+  border-left: 10px solid black;
+}
+
+.section h2{
+  color:#00f2ff;
+  margin-bottom:10px;
+}
+
+.left{
+  flex:2;
+}
+
+.right{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.info-box{
+  padding:15px;
+  border-radius:15px;
+  background: linear-gradient(145deg,#0e1629,#070b14);
+  border:1px solid rgba(255,255,255,0.1);
+}
+
+/* CONNECT */
+.connect{
+  margin-top:50px;
+}
+
+.cards{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.card{
+  width:200px;
+  padding:20px;
+  border-radius:15px;
+  background: linear-gradient(145deg,#0e1629,#070b14);
+  border:1px solid rgba(255,255,255,0.1);
+  transition:0.3s;
+  cursor:pointer;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 0 20px #00f2ff;
+  border-color:#00f2ff;
+}
+a{
+   background: radial-gradient(circle at 20% 20%, #0a0f2c, #050816 70%);
+  color:rgb(77, 107, 207);
+  overflow-x:hidden;
+}
+
+footer{
+  margin-top:50px;
+  color:#aaa;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="profile-wrapper">
+  <div class="profile-img">
+    <img src="cmbb.jpg">
+  </div>
+</div>
+
+<div class="intro">Hi, I'm</div>
+<h1>CHALA MERGA</h1>
+
+<div class="subtitle">
+Software Engineering Student | Aspiring AI/ML Engineer | Python • C++ • Web Dev<br>
+Founder @ Digi_Bridge Platform | INSA Alumni '25 | Brighter Generation Alumni '23 | STEM Enthusiast
+</div>
+
+<div class="badges">
+  <div class="badge">Problem Solver</div>
+  <div class="badge">Tech Enthusiast</div>
+  <div class="badge">Team Player</div>
+  <div class="badge">Quick Learner</div>
+
+</div>
+
+<div class="section">
+
+  <div class="left">
+    <h2>ABOUT ME</h2>
+    <p>
+    I am an aspiring Software Developer and AI Engineer with a strong passion for solving real-world problems through technology. I have gained hands-on experience through trainings, projects, and competitions.
+    <br><br>
+    I completed a web development training at INSA Summer Camp where I worked in a team to build EduMap Ethiopia.
+    <br><br>
+    I also participated in Brighter Generation Virtual Program and built EHG focused on social impact.
+    <br><br>
+    Through STEM training, I built a Smart Agriculture Robot and developed strong programming skills.
+    <br><br>
+    I am the founder of DIGI_BRIDGE platform.
+    </p>
+  </div>
+
+  <div class="right">
+    <div class="info-box">Haramaya university student</div>
+    <div class="info-box">INSA Alumni '25</div>
+    <div class="info-box">Brighter Generation Alumni '23</div>
+    <div class="info-box">STEM Alumni '24</div>
+    <div class="info-box"> AUSSS alumni '22-'25</div>
+  </div>
+</div>
+
+<div class="connect">
+  <h2>CONNECT WITH ME</h2>
+
+ <div class="cards">
+  <a class="card" href="linkedin.com/in/chala-merga-60746b379" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" width="28"><br>
+    LinkedIn
+  </a>
+
+  <a class="card" href="https://github.com/chalamb65" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="28"><br>
+    GitHub
+  </a>
+  <a class="card" href="https://twitter.com/yourusername" target="_blank">
+  <img class="x-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023_original.svg" width="28">
+  <br>X
+</a>
+
+  <a class="card" href="https://t.me/FaithFueled_1" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="28"><br>
+    Telegram
+  </a>
+
+  <a class="card" href="mailto:chalamerga65@gmail.com">
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="28"><br>
+    Email
+  </a>
+</div>
+</div>
+
+<footer>
+Code. Solve. Learn. Earn. 🚀<br>
+© 2026 Chala Merga
+</footer>
+
+</div>
+
+</body>
+</html>
